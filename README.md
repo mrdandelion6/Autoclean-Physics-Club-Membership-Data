@@ -18,9 +18,7 @@ Create a virtual environment and run the following command to install the requir
 ```bash
 pip freeze > requirements.txt
 ```
-Note that I used Python version 3.10.2 for this project, but the script should work with any version of Python 3 (I have not tested it with Python 2).
-
-If you are not familiar with virtual environments, you can follow a quick guide online or learn more from my article here: [Python Virtual Environments](https://medium.com/towardsdev/managing-virtual-environments-with-different-python-interpreters-b997b7bb7254).
+Note that I used Python version 3.10.2 for this project, but the script should work with any version of Python 3 (I have not tested it with Python 2). If you are not familiar with virtual environments, you can follow a quick guide online or learn more from my article here: [Python Virtual Environments](https://medium.com/towardsdev/managing-virtual-environments-with-different-python-interpreters-b997b7bb7254).
 
 ## Files
 
