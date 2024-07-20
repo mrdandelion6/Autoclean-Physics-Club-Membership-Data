@@ -1,5 +1,5 @@
 # Autoclean Membership Data
-This directory contains a script, `clean_members.py`, that is used to automatically clean the membership data for the *University of Toronto Mississauga Physics Club*. The script will read in all the data from the first sheet of the `members_list` google sheet and then output a cleaned version of the data to the second sheet of the same google sheet.
+This directory contains a script, `clean_members.py`, that is used to automatically clean the membership data for the *University of Toronto Mississauga Physics Club*. The script will read in all the data from the first sheet of the `members_list` google sheet and then output a cleaned version of the data to the second sheet of the same google sheet. The cleaned version shows separate information for **General Members** and **Associate Members**.
 
 This script has been used to manage and clean data for hundreds of UTMPC Members. If you are interested in joining the UTMPC, contact us on our [Discord server](https://discord.gg/558RfzrPNj).
 
@@ -8,6 +8,7 @@ I have set up a server to automatically run this script every day at 12:00 AM ES
 ```bash
 python clean_members.py
 ```
+You can adjust the global variables `PLOT_OUTPUT_PATH` and `PLOT_TITLE` as needed. Note that the usage for the cleaning script is **very specific to the format of the Google Sheet being used** for keeping track of the membership list. However, it still provides a great foundation which can be easily tailored to your own column names and logic. 
 
 ### Credentials
 The script requires a `key_secret.json` file to authenticate with the google sheet. This file should be placed in the same directory as the script. You will need to set up your own google project and create a credentials file. This can be done from the google cloud console by following the instructions [here](https://www.youtube.com/watch?v=w533wJuilao).
