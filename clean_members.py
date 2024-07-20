@@ -6,6 +6,8 @@ import matplotlib.pyplot as plt
 import os
 
 KEY_SECRET_PATH = 'key_secret.json'
+PLOT_OUTPUT_PATH = '../plots/'
+PLOT_TITLE = 'Membership Distribution'
 
 # change directory to script location. this is for when we save some output visualizations
 script_directory = os.path.dirname(os.path.abspath(__file__))
@@ -105,5 +107,5 @@ sizes = [len(members), len(associate_members)]
 labels = ['Members', 'Associate Members']
 plt.figure(figsize=(8, 8)) 
 plt.pie(sizes, labels=labels, autopct=lambda pct: f'{pct:.1f}%\n({int(pct/100.*sum(sizes))})', startangle=140)
-plt.title('Members vs Associate Members')
-plt.savefig('../plots/Members_vs_Associate_Members.png', dpi=300, bbox_inches='tight')
+plt.title(PLOT_TITLE)
+plt.savefig(PLOT_OUTPUT_PATH + PLOT_TITLE + '.png', dpi=300, bbox_inches='tight')
