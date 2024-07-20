@@ -4,7 +4,7 @@ This directory contains a script, `clean_members.py`, that is used to automatica
 This script has been used to manage and clean data for hundreds of UTMPC Members. If you are interested in joining the UTMPC, contact us on our [Discord server](https://discord.gg/558RfzrPNj).
 
 ## Usage
-I have set up a server to automatically run this script every day at 12:00 AM EST. It can also be run manually by running the following command in a terminal:
+I have set up a server to automatically run this script every day at 12:00 AM EST. You can do the same to manage your own membership data, or you can use Amazon Web Services like Lambda. Alternatively, it can also be run manually by running the following command in a terminal:
 ```bash
 python clean_members.py
 ```
