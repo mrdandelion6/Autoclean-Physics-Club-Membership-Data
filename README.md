@@ -1,5 +1,5 @@
 # Autoclean Membership Data
-This directory contains a script, `clean_members.py` that is used to automatically clean the membership data for the University of Toronto Mississauga Physics Club. The script will read in all the data from the first sheet of the `members_list` google sheet and then output a cleaned version of the data to the second sheet of the same google sheet.
+This directory contains a script, `clean_members.py`, that is used to automatically clean the membership data for the University of Toronto Mississauga Physics Club. The script will read in all the data from the first sheet of the `members_list` google sheet and then output a cleaned version of the data to the second sheet of the same google sheet.
 
 This script has been used to manage and clean data for hundreds of UTMPC Members. If you are interested in joining the UTMPC, contact us on our [Discord server](https://discord.gg/558RfzrPNj).
 
