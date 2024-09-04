@@ -8,6 +8,7 @@ import os
 KEY_SECRET_PATH = 'key_secret.json'
 PLOT_OUTPUT_PATH = '../plots/'
 PLOT_TITLE = 'Membership Distribution'
+FILE_NAME = PLOT_TITLE.lower().replace(' ', '_') + '.png' # snake case
 
 # change directory to script location. this is for when we save some output visualizations
 script_directory = os.path.dirname(os.path.abspath(__file__))
@@ -108,4 +109,6 @@ labels = ['Members', 'Associate Members']
 plt.figure(figsize=(8, 8)) 
 plt.pie(sizes, labels=labels, autopct=lambda pct: f'{pct:.1f}%\n({int(pct/100.*sum(sizes))})', startangle=140)
 plt.title(PLOT_TITLE)
-plt.savefig(PLOT_OUTPUT_PATH + PLOT_TITLE + '.png', dpi=300, bbox_inches='tight')
+plt.savefig(PLOT_OUTPUT_PATH + FILE_NAME, dpi=300, bbox_inches='tight')
+
+print("script ran successfully")
